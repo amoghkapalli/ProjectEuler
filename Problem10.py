@@ -7,6 +7,7 @@ def sieve(n):
    is_prime=[True]*(n-1)
    current_prime=2
    total_sum=0
+   
 #takes the current prime and does 2p, 3p, 4p, 5p etc
 #repeats for every prime checking
    while True:
@@ -26,10 +27,13 @@ def sieve(n):
             break
       else:
          break
+         
    for i,prime in enumerate(is_prime):
       if prime:
          total_sum+=(i+2)
+         
    print(total_sum)
+   
 sieve(2000000)
 
 
